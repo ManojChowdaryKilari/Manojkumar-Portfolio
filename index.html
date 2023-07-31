@@ -1,0 +1,374 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./Assets/Img/m-logo-3.png" type="image/x-icon">
+    <link rel="stylesheet" href="./Assets/CSS/style.css" />
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./Assets/CSS/swiper.css" />
+    <title>ManojKumar - Portfolio</title>
+    <style type="text/tailwindcss">
+        @layer utilities {
+        .nav-items {
+          @apply cursor-pointer;
+        }
+      }
+    </style>
+</head>
+
+<body class="bg-[var(--bg-primary)] text-[var(--color-primary)]">
+    <!-- NAV section -->
+    <div aria-label="menu"
+        class="z-30 grid transition grid-cols-3 md:hidden fixed translate-y-52 bottom-0 bg-[var(--bg-container-primary)] w-full items-center justify-center border-t border-t-[var(--border-secondary)] text-[var(--color-primary) text-sm">
+        <a href="#home" class="menu-link flex flex-col items-center justify-center py-4">
+            <i class="uil uil-estate"></i>
+            Home
+        </a>
+        <a href="#aboutMe" class="menu-link flex flex-col items-center justify-center py-4">
+            <i class="uil uil-notes"></i>About
+        </a>
+        <a href="#services" class="menu-link flex flex-col items-center justify-center py-4">
+            <i class="uil uil-cog"></i>Services
+        </a>
+        <a href="#experience" class="menu-link flex flex-col items-center justify-center py-4">
+            <i class="uil uil-flask-potion"></i>Experience
+        </a>
+        <a href="#works" class="menu-link flex flex-col items-center justify-center py-4">
+            <i class="uil uil-hard-hat"></i>Works
+        </a>
+        <a href="#contact" class="menu-link flex flex-col items-center justify-center py-4">
+            <i class="uil uil-at"></i>Contact
+        </a>
+    </div>
+
+    <nav
+        class="flex sticky px-2 relative -top-1 z-10 drop-shadow-lg justify-between items-center h-12 w-full bg-[var(--bg-secondary)] text-[var(--color-secondary)] border-b border-b-[var(--border-secondary)]">
+        <div class="container mx-auto flex justify-between">
+            <div class=""><img src="./Assets/Img/m-logo-3.png" class="h-6 w-6"></div>
+            <ul class="hidden md:flex gap-8 text-xs text-[var(--color-secondary)] nav-links">
+                <a href="#home">
+                    <li class="nav-items active-nav-link">Home</li>
+                </a>
+                <a href="#aboutMe">
+                    <li class="nav-items">About</li>
+                </a>
+                <a href="#services">
+                    <li class="nav-items">Services</li>
+                </a>
+                <a href="#experience">
+                    <li class="nav-items">Experience</li>
+                </a>
+                <a href="#works">
+                    <li class="nav-items">Works</li>
+                </a>
+                <a href="#blog">
+                    <li class="nav-items">Blog</li>
+                </a>
+                <a href="#contact">
+                    <li class="nav-items">Contact</li>
+                </a>
+            </ul>
+            <i class="block md:hidden uil uil-bars pr-2 open-menu"></i>
+        </div>
+    </nav>
+
+    <!-- Hero section -->
+    <section id="home"
+        class="h-96 flex flex-col gap-4 items-center justify-center bg-[var(--bg-secondary)] text-[var(--color-secondary)]">
+        <img src="./Assets/Img/Manoj.jpg" class="h-16 w-16 rounded-full bg-[var(--effect-color)]" />
+        <h2 class="text-2xl font-medium text-center w-60">
+          Manoj Kumar
+            <div class="text-xs font-thin">
+                I am a Front End Developer - I harmonize the realms of front-end
+                finesse and back-end wizardry, to create immersive experiences!
+            </div>
+        </h2>
+        <div class="flex gap-4">
+            <a target="_blank" href="https://github.com/ManojChowdaryKilari">
+                <i class="uil uil-github-alt cursor-pointer"></i></a>
+            <a target="_blank" href="https://www.linkedin.com/in/manoj-kumar-66a148238/">
+                <i class="uil uil-linkedin-alt cursor-pointer"></i></a>
+            <a target="_blank"  href="https://www.instagram.com/manoj_chowdary_kilari/">
+                <i class="uil uil-instagram-alt cursor-pointer"></i></a>
+        </div>
+        <button class="text-sm rounded-full py-2 px-4 bg-[var(--red)]">
+            Work with me
+        </button>
+    </section>
+
+    <!-- Container -->
+    <div class="flex flex-col container mx-auto p-4">
+        <!-- About me -->
+        <section class="flex flex-col gap-6 pt-16" id="aboutMe">
+            <h2 class="text-xl font-bold">About Me</h2>
+            <div class="flex gap-6">
+                <img src="./Assets/Img/Manoj.jpg"
+                    class="hidden md:block h-16 w-16 rounded-full bg-[var(--bg-secondary)]" />
+                <div
+                    class="grid grid-cols-1 md:grid-cols-3 shadow-lg bg-[var(--bg-container-primary)] rounded-lg text-[var(--color-info)] text-xs gap-6 p-6">
+                    <div class="flex flex-1 col-span-1 justify-between flex-col">
+                        <div>
+                            Crafting captivating user interfaces using modern frameworks and libraries and
+                            Architecting scalable and secure server-side systems;
+                            I am a seasoned software developer with expertise in front-end 
+                
+                            Web3.
+                            To know more on my professional journey and my technical expertise, delve into the
+                            depths of
+                            my comprehensive resume.
+                        </div>
+                        <div class="flex items-center mt-4">
+                            <a target="_blank" href="./assets/Resume/Manoj.kilari.pdf" download="Manojkilari.pdf">
+                                <button class="rounded-full text-white py-2 px-4 bg-[var(--red)]">
+                                    Download Resume
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-1 col-span-2">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-2 w-full">
+                            <div class="flex flex-col justify-start mb-2 gap-2">
+                                <div class="flex justify-between">
+                                    <div>HTML</div>
+                                    <div>90%</div>
+                                </div>
+                                <div class="bg-gray-300 h-2 rounded-full">
+                                    <div class="bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90% h-full rounded-full w-[90%]"></div>
+                                </div>
+                            </div>
+                            <div class="flex flex-col justify-start mb-2 gap-2">
+                                <div class="flex justify-between">
+                                    <div>CSS</div>
+                                    <div>90%</div>
+                                </div>
+                                <div class="bg-gray-300 h-2 rounded-full">
+                                    <div class="bg-[var(--purple)] h-full rounded-full w-[90%]"></div>
+                                </div>
+                            </div>
+                            <div class="flex flex-col justify-start mb-2 gap-2">
+                                <div class="flex justify-between">
+                                    <div>JAVA SCRIPT</div>
+                                    <div>90%</div>
+                                </div>
+                                <div class="bg-gray-300 h-2 rounded-full">
+                                    <div class="bg-[var(--green)] h-full rounded-full w-[90%]"></div>
+                                </div>
+                            </div>
+                            <div class="flex flex-col justify-start mb-2 gap-2">
+                                <div class="flex justify-between">
+                                    <div>BOOTSTRAP</div>
+                                    <div>80%</div>
+                                </div>
+                                <div class="bg-gray-300 h-2 rounded-full">
+                                    <div class="bg-[var(--dark-blue)] h-full rounded-full w-[80%]"></div>
+                                </div>
+                            </div>
+                            <div class="flex flex-col justify-start mb-2 gap-2">
+                                <div class="flex justify-between">
+                                    <div>Git</div>
+                                    <div>90%</div>
+                                </div>
+                                <div class="bg-gray-300 h-2 rounded-full">
+                                    <div class="bg-[var(--orange)] h-full rounded-full w-[90%]"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services -->
+        <section class="pt-16" id="services">
+            <h2 class="text-xl font-bold">Services</h2>
+            <div class="flex flex-col sm:flex-row mt-6 gap-4 text-[var(--color-secondary)]">
+                <div class="flex flex-col items-center justify-center flex-1 rounded-lg p-4 bg-[var(--purple)]">
+                    <i class="uil uil-brush-alt text-6xl"></i>
+                    <br />
+                    <h3 class="text-lg font-bold">UI/UX design</h3>
+                    <span class="text-xs leading-6 text-center">
+                        Crafting digital experiences that mesmerize and delight
+                    </span>
+                </div>
+                <div
+                    class="flex flex-col items-center justify-center flex-1 rounded-lg p-4 bg-[var(--yellow)] text-[var(--color-primary)]">
+                    <i class="uil uil-window text-6xl"></i>
+                    <br />
+                    <h3 class="text-lg font-bold">Web Development</h3>
+                    <span class="text-xs leading-6 text-center">
+                        Building digital landscapes with code, where ideas come to life
+                    </span>
+                </div>
+               
+            </div>
+            <span class="flex items-center justify-center text-xs mt-6 text-[var(--color-info)]">Looking for a
+                custom
+                solution?<a href="#contact"><span class="cursor-pointer text-[var(--red)]">&nbsp;Click
+                        here&nbsp;</span></a>to contact
+                me!</span>
+        </section>
+
+        <!-- Experience -->
+        <section class="pt-16" id="experience">
+            <h2 class="text-xl font-bold">Experience</h2>
+            <div class="flex flex-col md:flex-row mt-6 gap-4 text-[var(--color-primary)]">
+                <div class="flex flex-col flex-1 gap-2 bg-[var(--bg-container-primary)] rounded-lg shadow-lg p-6">
+                    <div class="flex gap-6">
+                        <div class="flex flex-col text-[var(--red)] items-center">
+                            <i class="uil uil-window"></i>
+                            <div class="flex-grow w-[0.5px] bg-[var(--red)]"></div>
+                        </div>
+                        <div class="flex flex-col text-[var(--color-primary)] text-sm gap-2">
+                            <div class="text-xs">Feb 2023 - Present</div>
+                            <h2 class="text-lg font-bold">Associate Software Engineer -  Pixel Dreams</h2>
+                            A ticket booking web application is a real-time project that allows users to search, book, and
+                            manage tickets for various events and activities.
+                             The application typically includes features such as event listings, seat selection, payment
+                             processing, tracking orders, and ticket confirmation and delivery.
+                             As a developer, my responsibilities included designing and developing the application's user
+                             interface, integrating APIs, implementing data validation and debugging the application to ensure
+                             optimal performance and user experience
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col flex-1 bg-[var(--bg-container-primary)] rounded-lg shadow-lg p-6">
+                    <div class="flex gap-6">
+                        <div class="flex flex-col text-[var(--red)] items-center">
+                            <i class="uil uil-window"></i>
+                            <div class="flex-grow w-[0.5px] bg-[var(--red)]"></div>
+                        </div>
+                        <div class="flex flex-col text-sm gap-2">
+                            <div class="text-xs">Sep 2021 - Jan 2022</div>
+                            <h2 class="text-lg font-bold">Associate Software Engineer -  Pixel Dreams</h2>
+                            Developed a responsive and user-friendly health project frontend application using HTML, CSS,
+                            and JavaScript
+                            Collaborated with designers to create an intuitive user interface that allowed users to access health
+                            information and resources easily.
+                            Integrated APIs to fetch and display real-time data such as provider data.
+                            Implemented responsive design techniques to ensure the application was accessible on different
+                            devices and screen sizes.
+                            The application improved user engagement and facilitated better decision-making regarding their
+                            health. <br>
+
+                             Responsibilities: <br>
+                             Involved in developing Responsive User Interface using React Js.
+                             Designed and optimized code for better Performance.
+                             Worked closely with team to complete all the requirements before due date.
+                             Helped team members to resolve any technical issue, issue identification & troubleshooting.
+                             Integrating API using axios and maintaining data in redux.
+                             Creating re-usable components using UI-component library (react-bootstrap).
+
+                        </div>
+                    </div>
+                    </div>
+
+        </section>
+
+        <!-- Recent Works  -->
+        <section class="pt-16" id="works">
+            <h2 class="text-xl font-bold">Recent Works</h2>
+            <h3 class="text-xl text-[var(--color-info)]">
+                Be the first one to be featured here
+            </h3>
+          
+        </section>
+
+        <!-- Client Reviews -->
+        <section class="pt-16">
+            <h2 class="text-xl font-bold">Clients & Reviews</h2>
+            <div class="flex mt-6 gap-4 text-[var(--color-primary)]">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper pb-8">
+                        <div class="swiper-slide">
+                            <div class="flex flex-col gap-4 items-center justify-center">
+                                <img src="./Assets/Img/Manoj.jpg"
+                                    class="h-16 w-16 rounded-full bg-[var(--effect-color)]" />
+                                <h2 class="text-md font-medium text-center">
+                                    Manoj Kumar
+                                    <div class="text-xs font-thin">
+                                        Front End developer
+                                    </div>
+                                </h2>
+                                <div
+                                    class="text-center text-xs font-light text-[var(--color-info)] shadow rounded-md shadow-lg bg-[var(--bg-container-primary)] p-4">
+                                    Asked myself to build an instagram clone and I am very satisfied by the work I
+                                    did.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="flex flex-col gap-4 items-center justify-center">
+                                <img src="" class="h-16 w-16 rounded-full bg-[var(--bg-secondary)]" alt="you" />
+                                <h2 class="text-md font-medium text-center">
+                                    You
+                                    <div class="text-xs font-thin">
+                                        This is you
+                                    </div>
+                                </h2>
+                                <div
+                                    class="text-center text-xs font-light text-[var(--color-info)] shadow rounded-md shadow-lg bg-[var(--bg-container-primary)] p-4">
+                                    If you give me work. Ill post your best reviews here
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
+
+      
+
+        <!-- Get in touch -->
+        <section class="pt-16" id="contact">
+            <h2 class="text-xl font-bold">Get in touch</h2>
+            <h3 class="text-sm text-[var(--color-info)]">
+                You can type in the details here, but unfortunately this won't work, But don't worry if I build your
+                form that will work.<br>I can use Reactjs, Nextjs13, Formik, Zod in frontend<br> For backend -
+                Nextjs13 or Nodejs with Mysql or Mongodb and nodemailer as well
+            </h3>
+            <div class="flex justify-center mt-6 gap-4 text-[var(--color-primary)]">
+                <form action="" class="flex max-w-[768px] container gap-4 flex-col">
+                    <div class="flex flex-col md:flex-row gap-6">
+                        <input type="text" placeholder="Your name"
+                            class="rounded-full shadow-lg flex-1 w-full md:w-64 p-4 text-sm" />
+                        <input type="text" placeholder="Your email"
+                            class="rounded-full shadow-lg flex-1  w-full md:w-64 p-4 text-sm" />
+                    </div>
+                    <input type="text" placeholder="Subject" class="rounded-full shadow-lg w-full p-4 text-sm" />
+                    <div>
+                        <textarea type="text" placeholder="Message"
+                            class="rounded-full shadow-lg w-full w-64 p-4 text-sm"></textarea>
+                    </div>
+                    <button class="text-[var(--color-secondary)] bg-[var(--red)] rounded-full p-4">
+                        Submit
+                    </button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Footer -->
+    </div>
+    <section class="flex items-center mt-8 justify-center p-4 bg-[var(--bg-secondary)] text-[var(--color-secondary)]">
+        Thank you
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./Assets/JS/script.js" defer></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            pagination: {
+                el: ".swiper-pagination",
+                dynamicBullets: true,
+            },
+        });
+    </script>
+</body>
+
+</html>
